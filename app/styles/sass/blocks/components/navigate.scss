@@ -1,0 +1,10 @@
+.navigate {
+  display: flex;
+  justify-content: space-between;
+  &.singlebtn {
+    justify-content: flex-end;
+    @include media-max(991) {
+      justify-content: center;
+    }
+  }
+}

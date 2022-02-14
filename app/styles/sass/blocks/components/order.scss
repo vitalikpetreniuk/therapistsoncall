@@ -1,0 +1,36 @@
+.order {
+  background: #F7FFF0;
+  margin-bottom: 27px;
+  z-index: 1;
+  &.active {
+    position: fixed;
+    width: 100%;
+    top: 0;
+    .container {
+      max-width: none;
+      & > div:last-of-type {
+        img {
+          transform: rotate(-180deg);
+        }
+      }
+    }
+  }
+  &__text {
+    img {
+      margin-right: 13px;
+    }
+    span {
+      font-weight: 600;
+      font-size: 14px;
+      line-height: 26px;
+    }
+  }
+  .container {
+    padding: 13px 20px 13px 9px;
+    & > div:last-of-type {
+      img {
+        transition: .2s;
+      }
+    }
+  }
+}

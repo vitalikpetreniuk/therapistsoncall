@@ -1,0 +1,54 @@
+.banner {
+  position: relative;
+  z-index: -1;
+  margin-top: 65px;
+  @include media-max(1440) {
+    margin-top: 0;
+  }
+  @include media-max(991) {
+    display: none;
+  }
+  &__text {
+    position: relative;
+    span {
+      display: inline-block;
+      font-family: Pridi, sans-serif;
+      font-weight: 700;
+      font-size: 320px;
+      line-height: 210px;
+      text-transform: uppercase;
+      color: #ECFDDC;
+      @include media-max(1440) {
+        font-size: 200px;
+      }
+    }
+  }
+  &__group {
+    position: absolute;
+    top: 0;
+    left: 0;
+    @include media-max(1440) {
+      margin-top: 10px;
+    }
+  }
+  &__title {
+    font-family: Pridi, sans-serif;
+    font-weight: 700;
+    font-size: 93px;
+    line-height: 144px;
+    color: #5EB90B;
+    @include media-max(1440) {
+      font-size: 70px;
+    }
+  }
+  &__subtitle {
+    margin-top: -5px;
+    font-weight: 300;
+    font-size: 21px;
+    line-height: 34px;
+    color: #535353;
+    @include media-max(1440) {
+      margin-top: -35px;
+    }
+  }
+}

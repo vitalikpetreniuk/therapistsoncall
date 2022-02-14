@@ -1,0 +1,40 @@
+.steps {
+  margin-top: 90px;
+  @include media-max(1440) {
+    margin-top: 50px;
+  }
+  @include media-max(991) {
+    margin-top: 25px;
+  }
+  &.services {
+    .title {
+      margin-top: 10px;
+      margin-bottom: 53px;
+      @include media-max(991) {
+        margin-bottom: 37px;
+      }
+    }
+  }
+  &__left {
+    max-width: 810px;
+    width: 100%;
+    margin-right: 30px;
+    @include media-max(991) {
+      margin: 0;
+    }
+  }
+  &__right {
+    max-width: 578px;
+    width: 100%;
+    @include media-max(991) {
+      display: none;
+    }
+    &.show {
+      display: flex;
+      position: absolute;
+      top: 52px;
+      left: 0;
+      max-width: none;
+    }
+  }
+}

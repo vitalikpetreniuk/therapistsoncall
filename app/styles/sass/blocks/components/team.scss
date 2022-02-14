@@ -1,0 +1,96 @@
+.team {
+  margin: 140px 0 0;
+  @include media-max(991) {
+    margin: 90px 0 0;
+  }
+  @include media-max(767) {
+    margin: 62px 0 0;
+  }
+  &__list {
+    margin-top: 158px;
+    @include media-max(767) {
+      margin-top: 120px;
+    }
+    @include media-max(575) {
+      margin-top: 88px;
+    }
+  }
+  &__card {
+    position: relative;
+    padding: 23px 23px 38px;
+    background: #FFFFFF;
+    box-shadow: 0 11px 20px rgba(0, 0, 0, 0.05);
+    border-radius: 8px;
+    width: calc(25% - 25px);
+    margin-bottom: 120px;
+    &:not(:first-of-type) {
+      @include media-max(767) {
+        display: none;
+      }
+    }
+    @include media-max(1399) {
+      width: calc(50% - 25px);
+    }
+    @include media-max(767) {
+      width: 100%;
+      margin-bottom: 16px;
+    }
+    @include media-max(575) {
+      padding: 16px 16px 24px;
+    }
+    img {
+      position: absolute;
+      top: -80px;
+      left: 50%;
+      transform: translate(-50%);
+      max-width: 141px;
+      width: 100%;
+      object-fit: cover;
+      @include media-max(575) {
+        max-width: 106px;
+        top: -60px;
+      }
+    }
+    &-name {
+      margin-top: 62px;
+      margin-bottom: 4px;
+      font-family: Pridi, sans-serif;
+      font-weight: 600;
+      font-size: 21px;
+      line-height: 34px;
+      text-align: center;
+      letter-spacing: 1px;
+      @include media-max(575) {
+        font-size: 16px;
+        margin-top: 40px;
+      }
+    }
+    &-category {
+      margin-bottom: 25px;
+      font-weight: 500;
+      line-height: 24px;
+      text-align: center;
+      color: #5EB90B;
+      @include media-max(767) {
+        margin-bottom: 12px;
+      }
+      @include media-max(575) {
+
+      }
+    }
+    p {
+      font-size: 14px;
+      line-height: 23px;
+      @include media-max(575) {
+        font-size: 11px;
+        line-height: 20px;
+      }
+    }
+  }
+  .dots {
+    @include media-min(768) {
+      display: none;
+    }
+    margin-bottom: 37px;
+  }
+}

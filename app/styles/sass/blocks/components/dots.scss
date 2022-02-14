@@ -1,0 +1,18 @@
+.dots {
+  &__item {
+    width: 6px;
+    height: 6px;
+    background: #D4D4D4;
+    border-radius: 50px;
+    &:not(:last-of-type) {
+      margin-right: 14px;
+    }
+    &.full {
+      background: #5EB90B;
+    }
+    &.active {
+      width: 25px;
+      background: #5EB90B;
+    }
+  }
+}

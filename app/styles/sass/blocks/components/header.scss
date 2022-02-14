@@ -1,0 +1,54 @@
+.header {
+  padding-top: 18px;
+  @include media-max(767) {
+    padding-top: 13px;
+  }
+  &__logo {
+    margin-right: 210px;
+    @include media-max(991) {
+      margin-right: 0;
+    }
+    img {
+      max-width: 391px;
+      width: 100%;
+      object-fit: cover;
+    }
+  }
+  &__phone {
+    a {
+      position: relative;
+      font-size: 13px;
+      line-height: 17px;
+      display: block;
+      @include media-max(767) {
+        font-size: 10px;
+        line-height: 13px;
+      }
+      &::before {
+        content: '';
+        width: 24px;
+        height: 24px;
+        display: block;
+        position: absolute;
+        left: -34px;
+        top: 0;
+        background-size: cover;
+        background: url("../images/dist/icons/phone-call.svg") no-repeat;
+        @include media-max(767) {
+          width: 18px;
+          height: 18px;
+          background-size: 18px 18px;
+          left: -22px;
+        }
+      }
+      & > span {
+        display: inline-block;
+        font-weight: 700;
+        font-size: 14px;
+        @include media-max(767) {
+          font-size: 11px;
+        }
+      }
+    }
+  }
+}

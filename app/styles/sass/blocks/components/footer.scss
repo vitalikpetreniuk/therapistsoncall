@@ -1,0 +1,41 @@
+.footer {
+  background: #FFFCED;
+  padding: 71px 0 75px;
+  @include media-max(991) {
+    padding: 40px 0;
+  }
+  @include media-max(575) {
+    padding: 20px 0;
+  }
+  ul {
+    margin-right: 42px;
+    li {
+      &:not(:last-of-type) {
+        margin-right: 42px;
+      }
+      a {
+        color: #5EB90B;
+        font-size: 14px;
+        line-height: 23px;
+        @include media-max(575) {
+          font-size: 12px;
+          text-align: center;
+        }
+      }
+    }
+    @include media-max(767) {
+      margin-right: 0;
+    }
+  }
+  span {
+    font-size: 14px;
+    line-height: 23px;
+    @include media-max(767) {
+      margin-top: 4px;
+    }
+    @include media-max(575) {
+      font-size: 11px;
+      text-align: center;
+    }
+  }
+}
