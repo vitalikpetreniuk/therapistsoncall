@@ -8,4 +8,21 @@
     line-height: 26px;
     text-align: center;
   }
+  &.alt {
+    @include media-max(991) {
+      text-align: start;
+      font-weight: 700;
+      font-size: 17px;
+      line-height: 24px;
+      color: #5EB90B;
+    }
+  }
+  &.only-mobile {
+    @include media-max(991) {
+      margin-bottom: 18px !important;
+    }
+    @include media-min(992) {
+      display: none;
+    }
+  }
 }

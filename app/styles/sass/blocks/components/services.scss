@@ -1,4 +1,40 @@
 .services {
+  &__radio {
+    margin-bottom: 120px;
+    label:not(:last-of-type) {
+      margin-bottom: 14px;
+      @include media-max(991) {
+        margin-bottom: 18px;
+      }
+    }
+    @include media-max(991) {
+      margin-bottom: 43px;
+    }
+  }
+  &__checkboxes {
+    margin-bottom: 114px;
+    label:not(:last-of-type) {
+      margin-bottom: 14px;
+      @include media-max(991) {
+        margin-bottom: 18px;
+      }
+    }
+    @include media-max(991) {
+      margin-bottom: 44px;
+    }
+  }
+  &__select {
+    margin-bottom: 343px;
+    @include media-max(991) {
+      margin-bottom: 44px;
+    }
+  }
+  &__fields {
+    margin-bottom: 80px;
+    @include media-max(991) {
+      margin-bottom: 45px;
+    }
+  }
   &__list {
     width: 100%;
     column-gap: 30px;
