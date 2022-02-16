@@ -35,6 +35,18 @@
       margin-bottom: 45px;
     }
   }
+  &__date {
+    .datepicker {
+      margin-bottom: 35px;
+    }
+    .title {
+      margin: 0 !important;
+    }
+    .time-list {
+      margin-top: 18px;
+      margin-bottom: 36px;
+    }
+  }
   &__list {
     width: 100%;
     column-gap: 30px;

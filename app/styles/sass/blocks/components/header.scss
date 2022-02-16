@@ -31,7 +31,7 @@
         display: block;
         position: absolute;
         left: -34px;
-        top: 0;
+        top: -4px;
         background-size: cover;
         background: url("../images/dist/icons/phone-call.svg") no-repeat;
         @include media-max(767) {
